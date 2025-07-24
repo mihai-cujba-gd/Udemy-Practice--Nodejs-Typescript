@@ -1,11 +1,10 @@
 import express from 'express';
+import todoRoutes from './routes/todo.js';
 
 const app = express();
 
-app.get("/", (req, res) => {
-    console.log(req.method);
+app.use(express.json());
 
-    res.end("Hello world")
-})
+app.use(todoRoutes);
 
-app.listen(3000)
+app.listen(3000);
