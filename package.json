@@ -4,8 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "compile": "tsc -w",
-    "start": "node dist/app.js"
+    "start": "node app.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +17,6 @@
     "typescript": "^5.8.3"
   },
   "volta": {
-    "node": "22.6.0"
+    "node": "23.11.1"
   }
 }
